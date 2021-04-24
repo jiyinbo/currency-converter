@@ -28,7 +28,7 @@ http://localhost:8080/
 
 ## Running the tests
 
-To run the tests, navigate to the currency-converter directory, on any command line interface and run "mpm run test".
+To run the tests, navigate to the currency-converter directory, on any command line interface and run "npm run test".
 
 ## Deployment
 
