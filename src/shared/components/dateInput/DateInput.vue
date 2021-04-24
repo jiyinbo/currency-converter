@@ -1,8 +1,8 @@
 <template>
   <div class="field">
     <label v-if="id" :for="id">{{label}}</label>
-    <input :id="id" placeholder="0.00" type="date" :value="currentDate"
-      :min="ratesApiEarliestDate" :max="currentDate" @change="handleChange($event)" />
+    <input :id="id" type="date" :value="yesterday"
+      :min="ratesApiEarliestDate" :max="today" @change="handleChange($event)" />
   </div>
 </template>
 
@@ -11,7 +11,8 @@ export default {
   name: 'DateInput',
   data() {
     return {
-      currentDate: new Date().toISOString().slice(0, 10),
+      today: new Date().toISOString().slice(0, 10),
+      yesterday: new Date(new Date().getTime() - 24 * 60 * 60 * 1000).toISOString().slice(0, 10),
       ratesApiEarliestDate: '1999-01-04',
     };
   },

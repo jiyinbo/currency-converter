@@ -1,5 +1,5 @@
 <template>
-<div v-if="otherCurrencies.length > 0">
+<div v-if="otherCurrencies.length > 0" class="table-container">
   <h3>Other Currency Conversion</h3>
   <table>
     <thead>
@@ -63,6 +63,10 @@ export default {
 </script>
 
 <style scoped>
+.table-container {
+  height: 25em;
+  overflow-y: scroll;
+}
 table {
   border-collapse: collapse;
   width: 100%;

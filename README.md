@@ -6,7 +6,7 @@ This project helps with currency conversion from a specified base currency and a
 
 1. To start the app locally, You need to have docker installed on your machine. You can find instructions on how to install it here https://docs.docker.com/install/
 2. You also need npm installed on your machine. For this, follow the instructions here to download and install node https://nodejs.org/en/download/
-3. Clone this repository to your local machine
+3. Clone this repository to your local machine by running the following command in your command line interface: "git clone https://github.com/Friendlyheart/currency-converter.git"
 
 ## Getting Started
 
@@ -20,8 +20,8 @@ You can also start the application locally without docker by following these ste
 2. Run "npm install" to install project dependencies
 3. Run "npm run serve" to start webpack development server locally (this may take a few seconds, please be patient).
 4. Wait till you see - App running at:
-  - Local:   http://localhost:8080/
-  - Network: http://192.168.8.100:8080/
+  -- Local:   http://localhost:8080/
+  -- Network: http://192.168.8.100:8080/
 
 The currency converter can now be accessed by loading the following URL on any browser:
 http://localhost:8080/

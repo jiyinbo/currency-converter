@@ -43,7 +43,7 @@ export default {
         amount: '',
         from: '',
         to: '',
-        date: new Date().toISOString().slice(0, 10),
+        date: new Date(new Date().getTime() - 24 * 60 * 60 * 1000).toISOString().slice(0, 10),
       },
       message: '',
     };
@@ -52,7 +52,7 @@ export default {
     AmountInput, SelectInput, DateInput, ConversionResult, MoreConversionResult,
   },
   async created() {
-    await this.loadRates('USD', this.inputData.date);
+    await this.loadRates('EUR', this.inputData.date);
   },
   methods: {
     ...mapActions(['fetchRatesAction']),
