@@ -24,7 +24,7 @@ You can also start the application locally without docker by following these ste
   - Network: http://192.168.8.100:8080/
 
 The currency converter can now be accessed by loading the following URL on any browser:
-http://localhost:9090/
+http://localhost:8080/
 
 ## Running the tests
 
