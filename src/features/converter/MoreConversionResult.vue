@@ -9,8 +9,8 @@
         <th>Value</th>
       </tr>
     </thead>
-    <tbody v-for="(currency, idx) in otherCurrencies" :key="idx">
-      <tr>
+    <tbody>
+      <tr v-for="(currency, idx) in otherCurrencies" :key="idx">
         <th>{{ currency.key }}</th>
         <th>{{ currency.rate }}</th>
         <th>{{ currency.value }}</th>
@@ -67,6 +67,7 @@ export default {
   height: 25em;
   overflow-y: scroll;
 }
+
 table {
   border-collapse: collapse;
   width: 100%;

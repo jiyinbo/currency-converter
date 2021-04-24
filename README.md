@@ -20,8 +20,8 @@ You can also start the application locally without docker by following these ste
 2. Run "npm install" to install project dependencies
 3. Run "npm run serve" to start webpack development server locally (this may take a few seconds, please be patient).
 4. Wait till you see - App running at:
-  -- Local:   http://localhost:8080/
-  -- Network: http://192.168.8.100:8080/
+  - Local:   http://localhost:8080/
+  - Network: http://192.168.8.100:8080/
 
 The currency converter can now be accessed by loading the following URL on any browser:
 http://localhost:8080/
@@ -49,7 +49,9 @@ You can find a quick demo of the project here https://currency-converter21.netli
 - User experience can be further improved by automatically detecting their locale and have their currency preselected
 - Dropdowns for selecting currencies can be made searchable
 - Pagination and ability to sort and filter table data can be introduced in other currency conversions table
+- Accessibility and internationalization can come in as improvements also
 - Although rates api used does not make provision for this, flags corresponding to currencies can be added to currency select dropdowns
+- End to end test can also be added to the project
 
 ## Acknowledgments
 

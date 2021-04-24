@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import fetchRatesData from '../shared/utils/data.service';
+import fetchRatesData from '../shared/utils/dataService';
 import FETCH_RATES_DATA from './mutation-types';
 
 Vue.use(Vuex);
@@ -10,20 +10,20 @@ const state = () => ({
   rates: [],
 });
 
-const mutations = {
+export const mutations = {
   [FETCH_RATES_DATA](currentState, ratesData) {
-    if (ratesData?.rates) currentState.rates.push(ratesData);
+    currentState.rates.push(ratesData);
   },
 };
 
-const actions = {
+export const actions = {
   async fetchRatesAction({ commit }, { base, date }) {
     const ratesData = await fetchRatesData(base, date);
     commit(FETCH_RATES_DATA, ratesData);
   },
 };
 
-const getters = {
+export const getters = {
   getRatesByBaseAndDate: (currentState) => (base, date) => currentState.rates
     .find((r) => r.base === base && r.date === date),
 
